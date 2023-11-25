@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HANG TUAH</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        h1 {
+            font-size: 20pt;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            order: -1;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 15pt;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .kotak {
+            width: 400px;
+            height: 250px;
+            background: transparent;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        hr {
+            margin-bottom: 10px;
+        }
+
+        li {
+            text-align: center;
+            display: block;
+        }
+
+        .link-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        
+        .link-container a {
+            position: relative;
+            font-size: 1.1em;
+            color: rgb(73, 70, 70);
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 20px;
+            margin-right: 20px; 
+            padding: 5px 0;
+            transition: color 0.3s;
+        }
+
+        .link-container a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            width: 100%;
+            bottom: -6px;
+            height: 3px;
+            background: rgb(51, 110, 236);
+            border-radius: 5px;
+            transform: scaleX(0);
+            transition: transform 0.5s;
+        }
+
+        .link-container a:hover {
+            color: rgb(51, 110, 236);
+        }
+
+        .link-container a:hover::after {
+            transform-origin: left;
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="kotak">
+            <h1>Profil Anggota Kelompok</h1>
+            <p>
+                1. I Gede Dipa Satya Dana Putra (12)<br>
+                2. I Made Dwi Arya Saputra (14)<br>
+                3. I Putu Okta Suryawan (16)<br>
+                4. I Wayan Gavin Yugana Putra (18)<br>
+                5. Ida Bagus Alit Raditya (20)
+            </p>
+        </div>
+        <div class="link-container">
+            <p>Click link di bawah untuk melihat page-page sebelumnya</p>
+            <hr>
+            <li><a href="struktur.html">Struktur</a></li><br>
+            <li><a href="index.html">Cerita</li></a>
+        </div>
+    </div>
+</body>
+
+</html>
